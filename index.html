@@ -15,21 +15,21 @@
         <a href="#" class="logo">Portfolio</a>
     <i class="fa-solid fa-bars" id="menu-icon"></i>
     <nav class="navbar">
-        <a href="#Home" class="Active">Home</a>
-        <a href="#About">About</a>
-        <a href="#Portfolio">Portfolio</a>
-        <a href="#Services">Services</a>
-        <a href="#Contact">Contact</a>
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
     </nav>
     </header>
 
     <!--Home Section-->
 
-    <section class="Home">Home</section>
-    <div class="Home content">
+    <section class="home" id="home">
+    <div class="home-content">
         <h3>Hi!, Myself</h3>
         <h1>Ekta Urane</h1>
-        <h3>And I'm a Frontend Developer</h3>
+        <h3>And I'm a <span>Frontend Developer</span></h3>
+        <p>pikachu pika pika pikachu</p>
         <div class="social_media">
             <a href="#"><i class="fa-brands fa-linkedin"></i></a>
             <a href="#"><i class="fa-brands fa-github"></i></a>
@@ -38,9 +38,51 @@
         <a href="#" class="btn">Download CV</a>
     </div>
     <div class="home-img">
-        <img src="Assets/IMG_20230314_104756-removebg-preview.png" alt="">
+        <img src="Assets/profile.png" alt="">
     </div>
-    
+    </section>
+    <!---About Section-->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="Assets/about.png" alt="">   
+        </div>
+        <div class="about-content">
+            <h2 class="heading">ABOUT <span>Me</span></h2>
+            <h3>Frontend Developer</h3>
+            <p>jwnjcndeciebcecjenkjcnefkjcnekjnce</p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+    </section>
+
+    <!--portfolio Section-->
+<!-- 
+    <section class="portfolio">
+        <h2 class="heading">Latest <span>Projects</span> </h2>
+        <div class="portfolio-container">
+            <div class="portfolio-box">
+
+            </div>
+        </div>
+    </section> -->
+    <!--Contact Section-->
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me</span></h2>
+
+        <form action="#">
+            <div class="input-box">
+                <input type="text" placeholder="Full Name">
+                <input type="email" placeholder="Email Address">
+            </div>
+
+            <div class="input-box">
+                <input type="number" placeholder="Mobile Number">
+                <input type="text" placeholder="Email SUbject">
+            </div>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <input type="submit" value="Send Message" class="btn">
+        </form>
+
+    </section>
     <!--Script-->
     <script src="script.js"></script> 
 </body>
