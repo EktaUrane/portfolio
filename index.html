@@ -6,18 +6,21 @@
     <!---Font-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Personal Portfolio Website</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!--CSS-->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header class="header">
-        <a href="#" class="logo">Portfolio</a>
+        <a href="#" class="logo">Ekta <span>Urane</span></a>
     <i class="fa-solid fa-bars" id="menu-icon"></i>
     <nav class="navbar">
         <a href="#home" class="active">Home</a>
         <a href="#about">About</a>
-        <a href="#portfolio">Portfolio</a>
+        <a href="#skills">Skillset</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
         <a href="#contact">Contact</a>
     </nav>
     </header>
@@ -26,16 +29,16 @@
 
     <section class="home" id="home">
     <div class="home-content">
-        <h3>Hi!, Myself</h3>
+        <h3>Hi, Myself</h3>
         <h1>Ekta Urane</h1>
-        <h3>And I'm a <span>Frontend Developer</span></h3>
-        <p>pikachu pika pika pikachu</p>
+        <h3>And I'm a <span class="auto-type"></span></h3>
+        <p>The web whisperer weaving digital dreams into reality. With a flair for coding and an eye for design, I craft seamless online experiences that captivate and engage. From sleek interfaces to dynamic functionalities, I am the architect of tomorrow's digital landscape.</p>
         <div class="social_media">
             <a href="#"><i class="fa-brands fa-linkedin"></i></a>
             <a href="#"><i class="fa-brands fa-github"></i></a>
             <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
         </div>
-        <a href="#" class="btn">Download CV</a>
+        <a href="https://drive.google.com/file/d/14sANUfkqcrD54Uk5O5B7L_E5OA0DZLDQ/view?usp=drive_link" class="btn">Download CV</a>
     </div>
     <div class="home-img">
         <img src="Assets/profile.png" alt="">
@@ -47,23 +50,209 @@
             <img src="Assets/about.png" alt="">   
         </div>
         <div class="about-content">
-            <h2 class="heading">ABOUT <span>Me</span></h2>
-            <h3>Frontend Developer</h3>
-            <p>jwnjcndeciebcecjenkjcnefkjcnekjnce</p>
+            <h2 class="heading">Personal <span>Narrative</span></h2>
+            <h3>Hi there, I'm Ekta Urane.</h3>
+            <p>"Originally trained as an Electronics Engineer, I found myself captivated by the allure of technology and software development. So, I took the plunge into the world of coding. I've mastered languages like Python, SQL, HTML, CSS, JavaScript, React and Wordpress and even dabbled in AWS basics.</p>
+
+               <p> But it's not just about the code for me. I thrive on communication and collaboration. My knack for public speaking and seamless teamwork has allowed me to translate complex technical jargon into plain language, making me a valuable asset in any team.</p>
+                
+                <p>I'm not just here to get the job done; I'm here to excel. Every challenge is an opportunity to push boundaries and deliver top-notch results. My journey is a testament to the power of passion, perseverance, and an unyielding commitment to excellence. And I'm just getting started."</p>
             <a href="#" class="btn">Read More</a>
         </div>
     </section>
 
-    <!--portfolio Section-->
-<!-- 
-    <section class="portfolio">
-        <h2 class="heading">Latest <span>Projects</span> </h2>
-        <div class="portfolio-container">
-            <div class="portfolio-box">
+        <!--Skills Section-->
 
+        <section class="skills" id="skills">
+            <div class="main-text">
+                <h2 class="heading">Proficiency <span>Panorama</span></h2>
+            </div>
+    
+            <div class="skill-main">
+                <div class="skill-left">
+                    <h3>Technical-Skills</h3>
+                    <div class="skill-bar">
+                        <div class="info">
+                            <p>HTML</p>
+                            <p>85%</p>
+                        </div>
+                        <div class="bar">
+                            <span class="html"></span>
+                        </div>
+                    </div>
+    
+                    <div class="skill-bar">
+                        <div class="info">
+                            <p>CSS</p>
+                            <p>85%</p>
+                        </div>
+                        <div class="bar">
+                            <span class="css"></span>
+                        </div>
+                    </div>
+    
+                    <div class="skill-bar">
+                        <div class="info">
+                            <p>JavaScript</p>
+                            <p>80%</p>
+                        </div>
+                        <div class="bar">
+                            <span class="javascript"></span>
+                        </div>
+                    </div>
+    
+                    <div class="skill-bar">
+                        <div class="info">
+                            <p>ReactJS</p>
+                            <p>70%</p>
+                        </div>
+                        <div class="bar">
+                            <span class="react"></span>
+                        </div>
+                    </div>
+    
+                    <div class="skill-bar">
+                        <div class="info">
+                            <p>Python</p>
+                            <p>72%</p>
+                        </div>
+                        <div class="bar">
+                            <span class="python"></span>
+                        </div>
+                    </div>
+    
+                    <div class="skill-bar">
+                        <div class="info">
+                            <p>SQL</p>
+                            <p>62%</p>
+                        </div>
+                        <div class="bar">
+                            <span class="sql"></span>
+                        </div>
+                    </div>
+    
+                    <div class="skill-bar">
+                        <div class="info">
+                            <p>Wordpress</p>
+                            <p>85%</p>
+                        </div>
+                        <div class="bar">
+                            <span class="wordpress"></span>
+                        </div>
+                    </div>
+                </div>
+<!--                 
+                <div class="skill-right">
+                    <h3>Professional Skills</h3>
+                    <div class="professional">
+
+                        <div class="progress" style="--i:90;--clr:#59B2F4;">
+                            <h3>90 <span>%</span></h3>
+                            <h4>Team Work</h4>
+                        </div>
+
+                        <div class="progress" style="--i:90;--clr:#59B2F4;">
+                            <h3>92 <span>%</span></h3>
+                            <h4>Verbal Communication</h4>
+                        </div>
+
+                        <div class="progress" style="--i:90;--clr:#59B2F4;">
+                            <h3>94 <span>%</span></h3>
+                            <h4>Leadership</h4>
+                        </div>
+
+                        <div class="progress" style="--i:90;--clr:#59B2F4;">
+                            <h3>80 <span>%</span></h3>
+                            <h4>Time Management</h4>
+                        </div>
+
+                        <div class="progress" style="--i:90;--clr:#59B2F4;">
+                            <h3>85 <span>%</span></h3>
+                            <h4>Problem Solving</h4>
+                        </div> -->
+                    </div>
+                </div>
+        </section>
+            
+
+        <!---Projects Section-->
+        <section class="projects" id="projects">
+            <h2 class="heading">My Hands-On <span>Creations</span></h2>
+
+            <div class="projects-container">
+                <div class="projects-box">
+                    <i class="fa-solid fa-cloud"></i>
+                    <h3>Weather Checking Application</h3>
+                    <p>Developed dynamic weather application leveraging Python programming and the Open Weather Map API. Implemented robust exception-handling mechanisms, ensuring seamless performance under
+                        diverse conditions.</p>
+                        <a href="https://github.com/EktaUrane/Infotrixs" class="btn">Github Link</a>
+                </div>
+
+                <div class="projects-box">
+                    <i class="fa-solid fa-database"></i>
+                    <h3>Data Visualization</h3>
+                    <p>Directed the creation and implementation of a comprehensive data visualization dashboard, integrating backend development with Flask/Django, frontend design with React.</p>
+                    <a href="https://github.com/EktaUrane/DataVisualization" class="btn">Github Link</a>
+                </div>
+
+                <div class="projects-box">
+                    <i class="fa-solid fa-group-arrows-rotate"></i>
+                    <h3>Object Detection Machine</h3>
+                    <p>Designed and implemented an Object Sorting Machine with Python and TensorFlow, streamlining operations. Led the integration of a robust data logging feature for precise performance tracking, optimizing efficiency and decision-making.</p>
+                    <a href="https://docs.google.com/document/d/1Vax3rkKL3LOwls1U3uPlQdBJbRZVa8GbVoG5UeLOipU/edit?usp=drive_link" class="btn">Documentation</a>
+                </div>
+            </div>
+        </section>
+
+
+    <!--Education Section-->
+
+    <section class="education" id="education">
+        <h2 class="heading">Scholarly Pursuits</h2>
+        <div class="timeline-items">
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                    <div class="timeline-date">2017</div>
+                    <div class="timeline-content">
+                        <h3>Class X</h3>
+                        <p>I have completed my SSC in Sai English School, Ichalkaranji</p>
+                    </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                    <div class="timeline-date">2019</div>
+                    <div class="timeline-content">
+                        <h3>Class XII </h3>
+                        <p>I have completed my HSC in Manere Junior College, Ichalkaranji</p>
+                    </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                    <div class="timeline-date">2023</div>
+                    <div class="timeline-content">
+                        <h3>Bachelor Of Technology</h3>
+                        <p>I have completed my B.Tech in Electronics Engineering from DKTE Scoiety's Textile and Engineering Institute.</p>
+                    </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                    <div class="timeline-date">2023</div>
+                    <div class="timeline-content">
+                        <h3>Internship</h3>
+                        <p>I worked as a python Developer at Infotrixs, where I worked on Weather Checking Application and Spearheaded a team of four members.</p>
+                    </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                    <div class="timeline-date">2024</div>
+                    <div class="timeline-content">
+                        <h3>Industry Immersion</h3>
+                        <p>Currently I am working as a Web Developer at Michelle Salins, Bangalore. I am spearheading a new website using ReactJS and Material UI.</p>
+                    </div>
             </div>
         </div>
-    </section> -->
+    </section>
     <!--Contact Section-->
     <section class="contact" id="contact">
         <h2 class="heading">Contact <span>Me</span></h2>
@@ -76,7 +265,7 @@
 
             <div class="input-box">
                 <input type="number" placeholder="Mobile Number">
-                <input type="text" placeholder="Email SUbject">
+                <input type="text" placeholder="Email Subject">
             </div>
             <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
             <input type="submit" value="Send Message" class="btn">
@@ -93,6 +282,20 @@
             <a href="#home"><i class="fa-solid fa-angle-up"></i></a>
         </div>
     </footer>
+    <!---Scroll Reveal -->
+<script src="https://unpkg.com/scrollreveal"></script>
+
+<!------typed js-->
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script>
+var typed = new Typed('.auto-type', {
+    strings: ['Frontend Developer', 'Web Developer', 'Software Developer' ],
+    typeSpeed: 70,
+    backSpeed: 70,
+    backDelay: 1000,
+    loop: true,
+})
+</script>
     <!--Script-->
     <script src="script.js"></script> 
 </body>
